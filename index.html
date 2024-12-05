@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitación Dennis & Claudia</title>
+     <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- FONT -->
+        <!--Titulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <!--Texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Parisienne&display=swap" rel="stylesheet">
+     <!-- CSS -->
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!--Fotos-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- inicio-->
+     <section id="inicio">
+        <p>NUESTRA BODA</p>
+        <h1>Dennis <br>& Claudia</h1>
+        <div>
+           <p><i class="fa fa-quote-left" aria-hidden="true"></i>
+            <br>El mejor tipo de amor es aquel que despierta el alma y nos hace aspirar a más, nos <br>
+            enciende el corazón y nos trae paz a la mente. Y eso es lo que tú me has dado<br>
+            <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+        </div>
+       
+     </section>
+    <!-- Sección Nosotros -->
+    <section id="nosotros">
+        <div class="overlay">
+        <p>Clic para escuchar<br> nuestra canción:
+            <div class="audio-control">
+                <i class="fas fa-play-circle" onclick="playAudio()"></i>
+                <audio id="weddingSong" src="audio/weddingSong.mp3" preload="auto"></audio>
+            </div>
+        </p> 
+        </div>
+    </section>
+    <section id="contador">
+        <div id="countdown">
+            <img src="images/fecha1Final.png" alt="Foto de la boda" class="img-responsive">
+            <p>Falta<br>
+            <span id="days"></span> días | <span id="hours"></span> hs | <span id="minutes"></span> min | <span id="seconds"></span> seg</p>
+            <img src="images/fecha2Final.png" alt="Foto de la boda" class="img-responsive">
+        </div>
+    </section>
+    <section id="ceremonia">
+        <h1>Ceremonia <br>
+            <img src="images/ceremonia.png" alt="Foto de la boda" class="img-responsive">
+            </h1>
+        
+    </section>
+    <section id="informacion">
+       <div>
+        <p>
+            <br><i class="fa fa-calendar" aria-hidden="true"></i>
+            DÍA <br>
+            Sábado 18 de enero del 2025 - 4:00pm
+            <br><br><i class="fa fa-map-pin" aria-hidden="true"></i>
+            LUGAR <br>
+            Av.1 , Goicoechea , San José
+        </p>
+    </div>
+    </section>
+
+    <section id="mapa">
+        <div class="iframe-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6085246082926!2d-84.0605561!3d9.9535769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e46271388579%3A0xbe898baf1082b7eb!2sAv.%2041%2C%20San%20Jos%C3%A9%2C%20Goicoechea!5e1!3m2!1ses!2scr!4v1733347006011!5m2!1ses!2scr" width="94%" height="450" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </section>
+
+    <section id="fotos">
+        <br><img src="images/retratos.png" alt="Foto de la boda" class="img-responsive">
+        <h1>Retratos de Nuestro Amor</h1><br>
+        <p>Un minuto, un segundo, un instante <br>
+        que queda en la eternidad<br>
+        <i class="fa fa-camera fa-2x" aria-hidden="true"></i></p>
+        <!-- Carrusel -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/2.jpg" alt="Foto 1" class="img-responsive" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt="Foto 2" class="img-responsive" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt="Foto 3" class="img-responsive" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt="Foto 4" class="img-responsive" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt="Foto 5" class="img-responsive" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/7.jpg" alt="Foto 6" class="img-responsive" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/8.jpg" alt="Foto 7" class="img-responsive" loading="lazy"></div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+    </div>
+    </section>
+
+    <section id="dressCode">
+        <br><h1>Dress Code</h1>
+        <img src="images/ceremonia.png" alt="Foto de la boda" class="img-responsive">
+        <p>Una orientación para tu vestuario</p>
+    </section>
+    <section class="container" id="gender-section">
+        <div class="row">
+            <!-- Columna Hombres -->
+            <div class="six columns gender-column">
+                <p><br><i class="fa fa-male fa-3x" aria-hidden="true"></i><br>
+                Hombres<br>
+                <button class="button-primary" onclick="location.href='https://pin.it/5BlbII8Tm';">Ver más</button></p>
+            </div>
+    
+            <!-- Columna Mujeres -->
+            <div class="six columns gender-column">
+                <p><br><i class="fa fa-female fa-3x" aria-hidden="true"></i><br>
+                Mujeres<br>
+                <button class="button-primary" onclick="location.href='https://pin.it/3CNJo2qvj';">Ver más</button></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="tips">
+        <br><img src="images/retratos.png" alt="Foto de la boda" class="img-responsive">
+        <h1>Tips & Notas</h1>
+    </section>
+
+    <section class="container" id="tips2">
+        <div class="row">
+            <div class="twelve columns tips-column">
+                <p>
+                    <br>Información adicional para tener en cuenta
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-check-square"></i>¡Por favor ser puntuales!</li>
+                        <li><i class="fa-li fa fa-check-square"></i>Confirmar asistencia a la brevedad, antes del 22 DE DICIEMBRE DEL 2024</li>
+                        <li><i class="fa-li fa fa-check-square"></i>Llegar 15 minutos antes de las 4pm para el ingreso</li>
+                        <li><i class="fa-li fa fa-check-square"></i>Tener presente que no se cuenta con parqueo</li>
+                      </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="regalos">
+        <h1><br>Regalos<br></h1>
+       <img src="images/ceremonia.png" alt="Foto de la boda" class="img-responsive">
+       <p>El mejor regalo es su presencia, <br>
+        pero si quisieran darnos un gesto de amor les <br>
+        agradecemos que sea en efectivo<br>
+        <i class="fa fa-gift fa-2x" aria-hidden="true"></i></p>
+    </section>
+
+    <section id="recuerdos">
+        <br><img src="images/retratos.png" alt="Foto de la boda" class="img-responsive">
+        <h1>Compartimos este<br>
+        día junto a ti</h1>
+        <p>Comparte tus fotos y videos de este<br>
+        hermoso día<br>
+        <img src="images/codigoQR.png" alt="Foto de la boda" class="img-responsive"><br>
+        Escanea el código QR y sube tus fotos<br>
+        <button class="button-primary" onclick="location.href='https://drive.google.com/drive/folders/1URY0cq69lbMW93CUnxUoHqxNAxK82Omg?usp=sharing';">SUBIR FOTOS</button></p>
+    </section>
+
+    <section id="confirmar">
+        <h1><br>Confirmación</h1>
+        <img src="images/ceremonia.png" alt="Foto de la boda" class="img-responsive">
+        <p>Por favor confirmar antes del 22 de diciembre del 2024 <br>
+            ¿Nos acompañas en este día tan especial?<br>
+        <i class="fa fa-question-circle fa-spin fa-2x" aria-hidden="true"></i><br>
+        <button class="button-primary" onclick="location.href='https://forms.gle/Hoph9d4CiXMeguWN7';">CONFIRMAR ASISTENCIA</button><br><br><br></p>
+    </section>
+    <!--Scripts-->
+    <script src="js/countdown.js"></script>
+    <script>
+        function playAudio() {
+            const audio = document.getElementById('weddingSong');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+     const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 1, 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 4000, 
+    },
+});
+
+ </script>
+    
+</body>
+</html>

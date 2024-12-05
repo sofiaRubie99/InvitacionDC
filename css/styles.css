@@ -1,0 +1,223 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF5F3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#countdown {
+    text-align: center;
+    font-size: 1.5em;
+    color: #2596BE; 
+    margin-top: 20px;
+}
+
+#countdown span {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 1em; /* Tamaño base */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+
+/* Para pantallas grandes (computadoras de escritorio o tablets en modo apaisado) */
+@media (min-width: 1024px) {
+    p {
+        font-size: 2em; /* Aumenta el tamaño de la fuente en pantallas grandes */
+    }
+}
+
+/* Para pantallas medianas (tablets en modo vertical) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    p {
+        font-size: 1.5em; /* Tamaño de la fuente en tablets */
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    p {
+        font-size: 1em; /* Tamaño de la fuente en dispositivos móviles */
+    }
+}
+
+h1{
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#inicio{
+    padding-top: 20px;
+    padding-left:7px;
+    padding-right:7px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+
+#nosotros {
+    position: relative;
+    background-image: url('../images/1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#nosotros .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+}
+
+.audio-control {
+    margin-top: 8px;
+}
+
+.audio-control i {
+    font-size: 4em;
+    color: white;
+    cursor: pointer;
+}
+
+.audio-control i:hover {
+    color: rgb(185, 185, 185);
+}
+
+#ceremonia{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.img-responsive {
+    max-width: 90%;  
+    height: auto;      
+}
+
+#confirmar,
+#recuerdos,
+#regalos,
+#tips,
+#dressCode,
+#informacion{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;  
+}
+
+.iframe-map{
+    display: flex;
+    justify-content: center;
+  }
+
+#fotos {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    max-width: 100%; /* Asegura que el contenedor principal no se desborde */
+    overflow: hidden; /* Esconde cualquier contenido que sobresalga del contenedor */
+}
+
+.swiper-container {
+    width: 100%; /* El carrusel debe ocupar solo el 100% del ancho */
+    max-width: 100%; /* Asegura que no se exceda del ancho de la pantalla */
+    margin: 0 auto; /* Centra el carrusel */
+    box-sizing: border-box;
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: 100%; /* Asegura que las diapositivas se ajusten al contenedor */
+}
+
+.swiper-slide {
+    position: relative;
+    width: 100%; /* Cada diapositiva ocupa el 100% del contenedor */
+    height: 100%; /* Se ajusta a la altura disponible */
+    box-sizing: border-box;
+}
+
+.swiper-slide img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+@media screen and (min-width: 769px) {
+    .swiper-slide img {
+        width: 40%; /* En pantallas grandes, imágenes ocupan el 40% */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container {
+        padding-left: 10px; /* Ajusta el padding en pantallas más pequeñas */
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .swiper-container {
+        padding-left: 5px; 
+        padding-right: 5px;
+    }
+}
+
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev {
+    color: #cab0ea !important; 
+}
+
+.swiper-container .swiper-button-next:hover,
+.swiper-container .swiper-button-prev:hover {
+    color: #b59ed1 !important; 
+}
+
+/*Columnas*/
+#tips2,
+#gender-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tips-column,
+.gender-column {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.gender-column h3 {
+    color: #555;
+}
+
+.gender-column button {
+    margin-top: 10px;
+    font-size: 16px;
+    background-color:#54BDDA;
+}
+
+.fa-ul{
+    text-align:left;
+}
