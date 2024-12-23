@@ -1,6 +1,6 @@
 function startCountdown() {
     // Fecha de la boda 
-    const weddingDate = new Date('2025-01-18T16:00:00-06:00').getTime(); // Hora en UTC-6 (Costa Rica)
+    const weddingDate = new Date('2025-01-18T17:00:00-06:00').getTime(); // Hora en UTC-6 (Costa Rica)
 
     setInterval(function() {
         // Fecha y hora actual ajustada automáticamente a la zona horaria local 
